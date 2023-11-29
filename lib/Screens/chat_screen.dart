@@ -33,7 +33,7 @@ class _ChatScreennState extends State<ChatScreenn> {
         //         builder: (_) => ViewProfileScreen(user: widget.user)));
       },
       child: StreamBuilder(
-        // stream: Apis.getUserInfo(widget.user),
+        stream: Apis.getAllUser(),
         builder: (context, snapshot) {
           //  final data = snapshot.data?.docs;
           //   final list =

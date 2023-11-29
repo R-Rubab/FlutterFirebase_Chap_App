@@ -43,9 +43,10 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () => FocusScope.of(context).unfocus(),
-      child: WillPopScope(
-        onWillPop: () {
-          if (isSearching) {
+      child: PopScope(
+        canPop: true,
+        onPopInvoked: (didPop)async{
+             if (isSearching) {
             setState(() {
               isSearching != isSearching;
             });
