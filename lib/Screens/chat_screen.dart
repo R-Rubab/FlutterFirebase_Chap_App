@@ -223,8 +223,9 @@ class _ChatScreennState extends State<ChatScreenn> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () => FocusScope.of(context).unfocus(),
-      child: WillPopScope(
-        onWillPop: () {
+      child: PopScope(
+        canPop: true,
+        onPopInvoked: (pop)async {
           if (showEmohi) {
             setState(() {
               showEmohi = !showEmohi;

@@ -45,8 +45,8 @@ class _HomeScreenState extends State<HomeScreen> {
       onTap: () => FocusScope.of(context).unfocus(),
       child: PopScope(
         canPop: true,
-        onPopInvoked: (didPop)async{
-             if (isSearching) {
+        onPopInvoked: (didPop) async {
+          if (isSearching) {
             setState(() {
               isSearching != isSearching;
             });
