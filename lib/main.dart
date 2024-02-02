@@ -1,10 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_chat_application_11/Screens/chat_screen.dart';
-import 'package:flutter_chat_application_11/Screens/home_screen.dart';
 import 'package:flutter_chat_application_11/auth/login.dart';
-import 'package:flutter_chat_application_11/auth/splash_screen.dart';
 import 'package:flutter_chat_application_11/firebase_options.dart';
 
 void main() {
